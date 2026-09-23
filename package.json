@@ -1,0 +1,26 @@
+{
+  "name": "ui-kit-js",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.6.0",
+    "@storybook/addon-docs": "^10.6.0",
+    "@storybook/html-vite": "^10.6.0",
+    "lucide-static": "^1.47.0",
+    "storybook": "^10.6.0",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.8.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "class-variance-authority": "^0.7.1",
+    "tailwindcss": "^4.3.3"
+  }
+}
