@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* 폰트 — font-base / font-accent / font-number 유틸리티가 생긴다 */
+  --font-base: 'Pretendard', sans-serif;
+  --font-accent: 'Libre Caslon Text', serif;   /* 영문 세리프 제목 */
+  --font-number: 'Roboto', sans-serif;         /* 표 안 숫자 (한글은 자동으로 base 로 떨어짐) */
+
+  /* 글자 크기 — text-* 유틸리티. --line-height 를 붙이면 줄간격까지 함께 적용된다 */
+  --text-heading-xl: 42px;
+  --text-heading-xl--line-height: 1.23;
+  --text-heading-lg: 28px;
+  --text-heading-lg--line-height: 1.5;
+  --text-heading-md: 22px;
+  --text-heading-md--line-height: 1.5;
+  --text-body-md: 18px;
+  --text-body-md--line-height: 1.5;
+  --text-label-lg: 20px;
+  --text-label-lg--line-height: 1.5;
+  --text-label-xs: 14px;
+  --text-caption: 16px;
+  --text-caption--line-height: 1.5;
+
+  /* 브레이크포인트 — mobile: / tablet: / desktop: 변형자가 생긴다 */
+  --breakpoint-mobile: 600px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-tablet-lg: 1024px;
+  --breakpoint-desktop: 1520px;
+
+  /* 원시 색 — 팔레트. 의미 색이 이걸 참조한다 */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray50: #F8F8F8;
+  --color-gray100: #F0F0F0;
+  --color-gray200: #E4E4E4;
+  --color-gray300: #D8D8D8;
+  --color-gray500: #BEBEBE;
+  --color-gray600: #999999;
+  --color-gray700: #555555;
+
+  /* 의미 색 — 테마가 이 값만 덮어쓴다. 이름은 고정 */
+  --color-primary: #1F594D;          /* 확정·긍정 액션 */
+  --color-primary-hover: #287363;
+  --color-primary-pressed: #103A31;
+  --color-secondary: #701E20;        /* 삭제·위험 액션 */
+  --color-secondary-hover: #AD3E41;
+  --color-secondary-pressed: #5C0D0F;
+  --color-tertiary: var(--color-white);           /* 취소·목록 등 보조 액션 */
+  --color-tertiary-hover: var(--color-gray100);
+  --color-tertiary-pressed: var(--color-primary);
+
+  --color-title1: #000000;
+  --color-title2: #0D4238;
+  --color-body: #555555;
+  --color-muted: #8E8C87;
+  --color-line: #E9E9E9;
+  --color-line-table: var(--color-gray300);
+  --color-danger: #FF0000;
+  --color-icon-download: #597D75;
+
+  /* 모서리 — 테마가 가장 먼저 바꾸는 값. demo 테마는 8px 로 덮는다 */
+  --radius-btn: 0;
+  --radius-input: 0;
+  --radius-check: 4px;
+  --radius-page: 0;    /* 페이지네이션 버튼 — demo 는 999px(원형) */
+
+  /* 비표준 실측값 — Tailwind 기본 스케일에 없는 크기만 토큰으로 둔다 */
+  --spacing-control-xl: 63px;   /* h-control-xl — 버튼·인풋 최대 높이 */
+  --spacing-tab: 68px;          /* h-tab — 탭 높이 */
+}
+
+:root {
+  --empty-icon-url: url("/icons/empty-box.svg");
+}

@@ -1,0 +1,8 @@
+[data-theme="demo"] {
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-pressed: #1E3A8A;
+  --radius-btn: 8px;
+  --radius-input: 8px;
+  --radius-page: 999px;
+}

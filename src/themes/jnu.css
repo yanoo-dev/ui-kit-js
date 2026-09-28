@@ -1,0 +1,8 @@
+[data-theme="jnu"] {
+  /* 의미 색 — 테마가 이 값만 덮어쓴다. 이름은 고정 */
+  --color-primary: #1F594D;          /* 확정·긍정 액션 */
+  --color-primary-hover: #287363;
+  --color-primary-pressed: #103A31;
+  --radius-btn: 0;
+  --radius-page: 0;
+}

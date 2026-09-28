@@ -1,0 +1,27 @@
+@import "../tokens/base.css";
+@import "../themes/jnu.css";
+@import "../themes/demo.css";
+
+@layer base {
+  body {
+    font-family: var(--font-base);
+    color: var(--color-body);
+  }
+}
+
+@utility icon-mask {
+  display: inline-block;
+  flex-shrink: 0;
+  background: currentColor;
+  -webkit-mask: var(--icon-url) center / contain no-repeat;
+  mask: var(--icon-url) center / contain no-repeat;
+}
+
+@utility icon-download { --icon-url: url("/icons/download.svg"); }  /* 규정·자료 다운로드 버튼 */
+@utility icon-left     { --icon-url: url("/icons/left.svg"); }      /* 페이지네이션 이전·처음 */
+@utility icon-right    { --icon-url: url("/icons/right.svg"); }     /* 페이지네이션 다음·끝 */
+@utility icon-down     { --icon-url: url("/icons/down.svg"); }      /* 셀렉트·아코디언 화살표 */
+@utility icon-exit     { --icon-url: url("/icons/exit.svg"); }      /* 모달·토스트 닫기 */
+@utility icon-check    { --icon-url: url("/icons/check.svg"); }     /* 체크박스 */
+@utility icon-search   { --icon-url: url("/icons/search.svg"); }    /* 검색바 */
+@utility icon-empty    { --icon-url: var(--empty-icon-url); }       /* 빈 상태 — 테마가 교체 */
